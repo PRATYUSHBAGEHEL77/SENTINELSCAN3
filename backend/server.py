@@ -257,8 +257,8 @@ class Handler(BaseHTTPRequestHandler):
             q=parse_qs(p.query); data,code=retest(q.get('finding_id',['LAB-AUTHZ-001'])[0]); self.json(data,code); return
         self.json({'error':'Not found'},404)
     def log_message(self,*args): pass
-
 if __name__=='__main__':
-    print('SentinelScan running at http://127.0.0.1:8000/')
+    PORT = int(os.environ.get('PORT', '8000'))
+    print(f'SentinelScan running at http://0.0.0.0:{PORT}/')
     print('Security demo: Assessment → Fix Lab → Retest → Resolved')
-    ThreadingHTTPServer(('127.0.0.1',8000),Handler).serve_forever()
+    ThreadingHTTPServer(('0.0.0.0', PORT), Handler).serve_forever()
