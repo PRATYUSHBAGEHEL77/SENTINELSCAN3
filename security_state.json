@@ -1,0 +1,35 @@
+{
+  "lab_fixed": false,
+  "findings": {
+    "LAB-AUTHZ-001": {
+      "status": "CONFIRMED",
+      "severity": "MEDIUM",
+      "cvss": "6.5"
+    },
+    "LAB-IDOR-001": {
+      "status": "CONFIRMED",
+      "severity": "MEDIUM",
+      "cvss": "6.5"
+    },
+    "LAB-XSS-001": {
+      "status": "CONFIRMED",
+      "severity": "MEDIUM",
+      "cvss": "5.3"
+    },
+    "LAB-JWT-001": {
+      "status": "CONFIRMED",
+      "severity": "HIGH",
+      "cvss": "7.5"
+    },
+    "LAB-SSRF-001": {
+      "status": "CONFIRMED",
+      "severity": "MEDIUM",
+      "cvss": "5.3"
+    },
+    "WM-HEADERS-001": {
+      "status": "CONFIRMED",
+      "severity": "LOW",
+      "cvss": "5.3"
+    }
+  }
+}

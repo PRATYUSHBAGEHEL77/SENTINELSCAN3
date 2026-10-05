@@ -1,0 +1,1 @@
+{"timestamp": "2026-10-05T04:17:14+00:00", "event": "security_assessment_completed", "details": {"target": "http://127.0.0.1:8000/", "test_id": "ASSESSMENT-20", "action": "run assessment", "result": "FINDINGS", "finding_ids": ["LAB-AUTHZ-001", "LAB-IDOR-001", "LAB-XSS-001", "LAB-JWT-001", "LAB-SSRF-001", "WM-HEADERS-001"]}}
